@@ -3,15 +3,15 @@ import HighScore from "./highscoremessage"
 
 function Nav(props) {
     return (
-        <div className="navbar">
+        <div className="nav nav-tabs">
             <ul>
-                <li className="title">
+                <li className="title" className="nav-item">
                     <a href = "/">
                       Clicker Game  
                     </a>
-                </li>
+                </li >
                 <HighScore score={props.score} topScore ={props.topScore}/>
-                <li>
+                <li className="nav-item">
                     score: {props.score} || topScore: {props.topScore}
                 </li>
             </ul>
