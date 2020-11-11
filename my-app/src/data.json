@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "name": "chef",
+      "image": "/Images/chef.jpg",
+      "clicked": false
+    },
+    {
+      "id": 2,
+      "name": "colorful Container",
+      "image": "/Images/colorfulcontainer.jpg",
+      "clicked": false
+    },
+    {
+      "id": 3,
+      "name" : "Cute Knife",
+      "image": "/Images/cuteknife.png",
+      "clicked": false
+    },
+    {
+      "id": 4,
+      "name": "fork",
+      "image": "/Images/fork.png",
+      "clicked": false
+    },
+    {
+      "id": 5,
+      "name": "Good Food",
+      "image": "/Images/goodfood.jpg",
+      "clicked": false
+    },
+    {
+      "id": 6,
+      "name": "Ice Cube Tray",
+      "image": "/Images/icecubetray.jpg",
+      "clicked": false
+    },
+    {
+      "id": 7,
+      "name": "kitchen",
+      "image": "/Images/kitchen.jpg",
+      "clicked": false
+    },
+    {
+      "id": 8,
+      "name": "knifeandfork",
+      "image": "/Images/knifeandfork.jpg",
+      "clicked": false
+    },
+    {
+      "id": 9,
+      "name": "meat",
+      "image": "/Images/meat.jpg",
+      "clicked": false
+    },
+    {
+      "id": 10,
+      "name": "pinkplate",
+      "image": "/Images/Pinkplate/png",
+      "clicked": false
+    },
+    {
+      "id": 11,
+      "name":"tableandchairs",
+      "image": "/Images/place.jpg",
+      "clicked": false
+    },
+    {
+      "id": 12,
+      "name":"Cute Spoon",
+      "image": "/Images/cutespoons.png",
+      "clicked": false
+    }
+  ]
