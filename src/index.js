@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ClickItem from './components/clickitem';
+
 import Header from "./components/header"
 import Nav from "./components/nav";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Nav />
-    <Header />
+  
     <App />
   </React.StrictMode>,
   document.getElementById('root')

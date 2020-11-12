@@ -1,5 +1,5 @@
 import React from "react";
-import HighScore from "./highscoremessage"
+import HighScore from "./highscoremessage.js"
 
 import "./style.css";
 
