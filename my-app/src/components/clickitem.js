@@ -3,8 +3,7 @@ import React from "react";
 
 import "./style.css";
 const ClickItem = props => {
-    console.log(props.image);
-    console.log(props);
+  
     return (
         <div className="card">
 
@@ -14,7 +13,8 @@ const ClickItem = props => {
                   className="img-fluid"
                   onClick={props.onClick}
                   src={props.image}
-                  alt={props.name} />
+                  alt={props.name}
+                  clicked={props.clicked} />
         
         
       </div>

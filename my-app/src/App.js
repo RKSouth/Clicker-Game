@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import Wrapper from "./components/Wrapper"
 import ClickItem from "./components/clickitem";
 import Header from "./components/header"
-
-
 import data from "./data.json";
 
 class App extends Component {
@@ -94,9 +92,20 @@ shuffleData= () => {
 
 
 
-  handleClick = ({score, topScore}) => {
+  handleClick = id => {
+    let currentClickedItem = this.state.data.filter(x => x.name === id.target.alt);
+    const score= 0 ;
+    const topScore = 0;
+
     console.log("click");
-    
+    console.log(id);
+    console.log(id.target.alt);
+    console.log(this.state.data)
+    console.log(currentClickedItem)
+
+     if (ClickItem.clicked === "false"){
+       console.log("I've been clicked")
+     }
     
     if (!this.state) {
       // if score and topScore are the same, then there is a new topScore value
@@ -132,13 +141,12 @@ shuffleData= () => {
       
         {this.state.data.map(data => (
           <ClickItem
-            
             id={data.id}
             key={data.id}
             name={data.name}
             image={data.image}
-            onClick={this.handleClick}
-            
+            clicked={data.clicked}  
+            onClick={this.handleClick}          
           />
         ))}
         </div>

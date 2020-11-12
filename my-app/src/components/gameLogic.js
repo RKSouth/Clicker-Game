@@ -37,36 +37,6 @@ shuffleData = (data) => {
     return data
 }
 
-
-
-
-//still need a function for handling correct guess, incorrect guess and resetting data
-
-// handleClick = event => {
-//   console.log("clicked");
-//     // Preventing the default behavior of the form submit (which is to refresh the page)
-//     event.preventDefault();
-//     this.shuffleData();
-//     if (!this.state.wasClicked.includes(event)) {
-//       // if score and highScore are the same, then there is a new highScore value
-//       if (this.state.score === this.state.topScore) {
-//         this.state.score++;
-//         this.state.topScore++;
-
-//         // if they are not equal, then only increase the score value
-//       } else {
-//         this.state.score++;
-//       }
-
-//       // adds the clicked item to wasClicked to track that it has been clicked
-      
-//     this.setState({
-//       img: "",
-//       name: "",
-//       id: ""
-//     });
-//   };
-// }
   handleCorrect = () => {
     
     if (this.state.score+1 > this.state.topScore) {
