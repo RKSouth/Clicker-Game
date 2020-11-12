@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Clicker-Game/static/css/main.e5866804.chunk.css",
+    "main.js": "/Clicker-Game/static/js/main.7bdf4099.chunk.js",
+    "main.js.map": "/Clicker-Game/static/js/main.7bdf4099.chunk.js.map",
+    "runtime-main.js": "/Clicker-Game/static/js/runtime-main.8c45ca13.js",
+    "runtime-main.js.map": "/Clicker-Game/static/js/runtime-main.8c45ca13.js.map",
+    "static/js/2.0cc70a9e.chunk.js": "/Clicker-Game/static/js/2.0cc70a9e.chunk.js",
+    "static/js/2.0cc70a9e.chunk.js.map": "/Clicker-Game/static/js/2.0cc70a9e.chunk.js.map",
+    "static/js/3.c6650b30.chunk.js": "/Clicker-Game/static/js/3.c6650b30.chunk.js",
+    "static/js/3.c6650b30.chunk.js.map": "/Clicker-Game/static/js/3.c6650b30.chunk.js.map",
+    "index.html": "/Clicker-Game/index.html",
+    "static/css/main.e5866804.chunk.css.map": "/Clicker-Game/static/css/main.e5866804.chunk.css.map",
+    "static/js/2.0cc70a9e.chunk.js.LICENSE.txt": "/Clicker-Game/static/js/2.0cc70a9e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c45ca13.js",
+    "static/js/2.0cc70a9e.chunk.js",
+    "static/css/main.e5866804.chunk.css",
+    "static/js/main.7bdf4099.chunk.js"
+  ]
+}
