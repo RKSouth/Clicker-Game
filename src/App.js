@@ -14,7 +14,7 @@ class App extends Component {
     score: 0,
     topScore: 0,
     maxScore: 12,
-    array: []
+    
 
   }
 
@@ -25,30 +25,8 @@ class App extends Component {
       }
     )
   }
-  // shuffleData = () => {
-  //   let index = this.state.data;
-  //   for (let i = 0; i < index.length; i++) {
-  //     var random = Math.floor(Math.random() * i);
-  //     var temp = index[i];
-  //     index[i] = index[random];
-  //     index[random] = temp;
-  //   }
-  //   this.setState({ data: index })
-  // }
 
-
-  // shuffleData= () => {
-  //   let i = this.state.data;
-  //   for (; i > 0; i--) {
-  //     const j = Math.floor(Math.random() * (i + 1));
-  //     const temp = this.state.data[i];
-  //     this.state.data[i] = this.state.data[j];
-  //     this.state.data[j] = temp;
-  //   }
-  //   console.log("shuffle")
-  //   return this.state.data;
-  // }
-
+//mix it up
   shuffleData = (data) => {
     let index = 11;
     let temp;
@@ -98,25 +76,25 @@ class App extends Component {
 
 
   handleClick = id => {
+    //how do we find out what item was clicked?
+    //filtering the current items alt tag (name) and setting it to currentitem then comparing the index of the name 
+    // to the clicked items names of id numbers ...weird
     let currentClickedItem = this.state.data.filter(x => x.name === id.target.alt);
-
-
-
     let currentClickedIndex = this.state.data.map(function (e) { return e.name; }).indexOf(currentClickedItem[0].name);;
     const score = 0;
     const topScore = 0;
 
 
-    console.log("click");
-    console.log(currentClickedItem);
-    console.log(currentClickedIndex);
-    console.log(this.state.data)
-    console.log(this.state.data[currentClickedIndex].clicked)
+    // console.log("click");
+    // console.log(currentClickedItem);
+    // console.log(currentClickedIndex);
+    // console.log(this.state.data)
+    // console.log(this.state.data[currentClickedIndex].clicked)
 
-
-
+//if the data clicked in the current index # had not been clicked then....
     if (this.state.data[currentClickedIndex].clicked === "false") {
       console.log("I've been clicked for the very first time (like a virgin)")
+      ///set it to true and call the handlecorrect page
       this.state.data[currentClickedIndex].clicked = "true";
       this.handleCorrect();
     }
