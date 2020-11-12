@@ -96,17 +96,25 @@ shuffleData = (data) => {
 
   handleClick = id => {
     let currentClickedItem = this.state.data.filter(x => x.name === id.target.alt);
+
+
+     
+    let currentClickedIndex = this.state.data.map(function(e) { return e.name; }).indexOf(currentClickedItem[0].name);;
     const score= 0 ;
     const topScore = 0;
 
+
     console.log("click");
     console.log(currentClickedItem);
+    console.log(currentClickedIndex);
     console.log(this.state.data)
-    console.log(this.state.data[currentClickedItem[0].id].clicked)
+    console.log(this.state.data[currentClickedIndex].clicked)
 
-     if (this.state.data[currentClickedItem[0].id].clicked === "false"){
+
+
+     if (this.state.data[currentClickedIndex].clicked === "false"){
        console.log("I've been clicked for the very first time (like a virgin)")
-       this.state.data[currentClickedItem[0].id].clicked = "true";
+       this.state.data[currentClickedIndex].clicked = "true";
        this.handleCorrect();
      }
      else{
