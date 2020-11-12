@@ -31,6 +31,8 @@ __1. A Way to keep Score__
 
 __2. Images that Jump around whenever you click__
 
+__2. Deployed to Github pages from the terminal__
+
 
 ## Usage
 ### How do you use this project? This is meant for anyone looking for a more structured approach to exercise and working out. If you are looking to keep an easy to manage website 
