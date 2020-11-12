@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import Wrapper from "./components/Wrapper"
 import ClickItem from "./components/clickitem";
+import Header from "./components/header"
 
 
 import data from "./data.json";
-let score;
-let topScore;
 
 class App extends Component {
   // Setting this.state.data to the data json array
@@ -61,13 +60,43 @@ shuffleData= () => {
 //     }
 //     return data
 // }
+  handleCorrect = () => {
+    
+    if (this.state.score+1 > this.state.topScore) {
+      this.setState({topScore: this.state.topScore+1})
+    }
+    if (this.state.score+1 === this.state.maxScore) {
+      this.setState({score: this.state.score+1})
+    }else{
+      this.setState({score: this.state.score+1})
+    }
+  }
+
+  handleReset = (currentClickedItem) => {
+    //if current score is at max reset score to 0 and topscore to 0
+    if (this.state.score+1 === this.state.maxScore) {
+      this.setState({score: 0, topScore: 0})
+      //reset clicked state for ClickedItem
+      const updatedClickedItem = currentClickedItem.map(ch => (true) ? { ...ch, isClicked: false } : ch)
+      return updatedClickedItem
+    }else{
+      return currentClickedItem
+    }
+  }
+
+  handleIncorrect = () => {
+    //incorrect selection made, reset score to 0
+    this.setState({score: 0})
+    //reset clicked state for ClickedItem
+    const updatedClickedItem = this.state.ClickedItem.map(ch => ch.isClicked === true ? { ...ch, isClicked: false } : ch)
+    return updatedClickedItem
+  };
 
 
 
-
-  handleClick = data => {
+  handleClick = ({score, topScore}) => {
     console.log("click");
-   
+    
     
     if (!this.state) {
       // if score and topScore are the same, then there is a new topScore value
@@ -96,7 +125,7 @@ shuffleData= () => {
   render() {
  
     return (
-      <div className="wrapper">
+      <Wrapper>
          <div className="container">
             <div className="text-center row" >
  
@@ -114,7 +143,7 @@ shuffleData= () => {
         ))}
         </div>
         </div>
-      </div>
+     </Wrapper>
     );
   }
 }
