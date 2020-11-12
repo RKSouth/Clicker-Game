@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Wrapper from "./components/Wrapper"
 import ClickItem from "./components/clickitem";
-import Header from "./components/highscoremessage"
+import Header from "./components/header"
 import Nav from "./components/nav"
 import HighScore from './components/highscoremessage'
+import Footer from './components/footer'
 import data from "./data.json";
 
 class App extends Component {
@@ -137,12 +138,14 @@ class App extends Component {
   render() {
 
     return (
-      <Wrapper>
+      <div>
+      <div>
 
         <Nav score={this.state.score}
           topScore={this.state.topScore}
+        
         />
-
+        <Header />
         <div className="container">
           <div className="text-center row" >
 
@@ -159,7 +162,9 @@ class App extends Component {
             ))}
           </div>
         </div>
-      </Wrapper>
+      </div>
+      <Footer />
+      </div>
     );
   }
 }
