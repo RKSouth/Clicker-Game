@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import Wrapper from "./components/Wrapper";
+import Wrapper from "./components/Wrapper"
 import ClickItem from "./components/clickitem";
-import Nav from "./components/nav";
-import Header from "./components/header";
+import Header from "./components/header"
 import data from "./data.json";
 
 class App extends Component {
@@ -12,6 +11,7 @@ class App extends Component {
     score: 0,
     topScore: 0,
     maxScore: 12,
+    array: []
 
   }
 
@@ -136,8 +136,6 @@ shuffleData = (data) => {
  
     return (
       <Wrapper>
-
-      < Nav />
          <div className="container">
             <div className="text-center row" >
  

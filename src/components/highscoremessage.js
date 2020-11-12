@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 class HighScore extends Component {
     state = {
         message: "",
