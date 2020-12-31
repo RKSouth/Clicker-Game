@@ -10,11 +10,11 @@ renderMessage =() => {
     switch (this.state.message) {
         case "correct":
         return "you got it right!"
-        break;
+   
         case "incorrect":
         return "you got it wrong!"
-        break;
-        default: return "click an image"
+        
+        default: return ""
 
     }
 }
