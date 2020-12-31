@@ -40,7 +40,6 @@ class App extends Component {
     return data
   }
   handleCorrect = () => {
-
     if (this.state.score + 1 > this.state.topScore) {
       this.setState({ topScore: this.state.topScore + 1 })
     }
@@ -50,7 +49,6 @@ class App extends Component {
       this.setState({ score: this.state.score + 1 })
     }
   }
-
 
   handleIncorrect = () => {
     //incorrect selection made, reset score to 0
