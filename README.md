@@ -26,6 +26,14 @@
 
 
 __1. A Way to keep Score__
+*Why?*
+Clicky Game is essentially a memory game -a game that can help those who have memory problems to track and improve their skills. So keeping score can be really helpful.
+
+*How?*
+
+Keeping a running score in react isn't very different from vanilla javascript because we want to track what is clicked and do a comparison. If the image hasn't een clicked yet, we want to add to it. If it has then the game is over and the score needs to be reset 
+![Compare](Images/ScoreTracking1.png)
+![Handle](Images/ScoreTracking2.png)
  
 __2. Images that Jump around whenever you click__
 
