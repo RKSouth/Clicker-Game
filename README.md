@@ -46,6 +46,7 @@ This adds a level of difficulty to the game that makes it more fun to play.
 
 __2. Deployed to Github pages from the terminal__
 
+I found this link to helpful and instructional on deploying to gh pages : [Link] (https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
 
 ## Usage
 ### How do you use this project? This is meant for anyone looking for a more structured approach to exercise and working out. If you are looking to keep an easy to manage website 
