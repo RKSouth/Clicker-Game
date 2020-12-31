@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import Wrapper from "./components/Wrapper"
 import ClickItem from "./components/clickitem";
 import Header from "./components/header"
 import Nav from "./components/nav"
-import HighScore from './components/highscoremessage'
+
 import Footer from './components/footer'
 import data from "./data.json";
 
@@ -14,6 +13,7 @@ class App extends Component {
     score: 0,
     topScore: 0,
     maxScore: 12,
+    message: "",
     
 
   }
@@ -121,7 +121,6 @@ class App extends Component {
 
         <Nav score={this.state.score}
           topScore={this.state.topScore}
-        
         />
         <Header />
         <div className="container">
