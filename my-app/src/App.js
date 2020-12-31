@@ -96,9 +96,6 @@ class App extends Component {
 
   handleClick = id => {
     let currentClickedItem = this.state.data.filter(x => x.name === id.target.alt);
-
-
-
     let currentClickedIndex = this.state.data.map(function (e) { return e.name; }).indexOf(currentClickedItem[0].name);;
     const score = 0;
     const topScore = 0;

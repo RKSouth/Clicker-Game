@@ -52,17 +52,6 @@ class App extends Component {
     }
   }
 
-  // handleReset = (currentClickedItem) => {
-  //   //if current score is at max reset score to 0 and topscore to 0
-  //   if (this.state.score+1 === this.state.maxScore) {
-  //     this.setState({score: 0, topScore: 0})
-  //     //reset clicked state for ClickedItem
-  //     const updatedClickedItem = currentClickedItem.map(ch => (true) ? { ...ch, isClicked: false } : ch)
-  //     return updatedClickedItem
-  //   }else{
-  //     return currentClickedItem
-  //   }
-  // }
 
   handleIncorrect = () => {
     //incorrect selection made, reset score to 0
@@ -109,16 +98,12 @@ class App extends Component {
     )
   };
 
-
-
-
   // Map over this.state.data and render a dataCard component for each data object
   render() {
 
     return (
       <div>
       <div>
-
         <Nav score={this.state.score}
           topScore={this.state.topScore}
         />
