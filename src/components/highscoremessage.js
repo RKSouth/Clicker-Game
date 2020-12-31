@@ -14,7 +14,7 @@ renderMessage =() => {
         case "incorrect":
         return "you got it wrong!"
         
-        default: return ""
+        default: return "Click an image to get started"
 
     }
 }

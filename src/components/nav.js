@@ -5,10 +5,9 @@ import "./style.css"
 function Nav(props) {
     return (
         <nav className="navbar navbar-expand-lg ">    
-           <div className="container">
-  <a className="navbar-brand" href="/">Clicky Game</a>
-  <h3> Click an image to get started</h3>
-  </div>
+     
+  <a className="navbar-brand" href="/">Restart Game</a>
+
   <div className="collapse navbar-collapse" id="navbarText">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">    
