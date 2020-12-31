@@ -1,12 +1,10 @@
 import React from "react";
 import HighScore from "./highscoremessage"
 
-// import "./style.css";
-
 function Nav(props) {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="/">Clicker Game</a>
+  <a className="navbar-brand" href="/">Clicky Game</a>
  
   <div className="collapse navbar-collapse" id="navbarText">
     <ul className="navbar-nav mr-auto">
